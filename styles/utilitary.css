@@ -1,0 +1,116 @@
+.overline{
+    font: var(--overline);
+    background: linear-gradient(to right, var(--gradient-content));
+    -webkit-background-clip: text;
+    /*pra não ficar erro*/
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+   
+}
+.display-lg{
+    font: var(--display-lg);
+    color: var(--content-primary);
+    text-transform: uppercase;
+}
+
+.question{
+    font: var(--paragraph-md);
+    color: var(--content-brand);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    
+   & img{
+        margin-right: 8px;
+    }
+}
+.paragraph-lg{
+    font: var(--paragraph-lg);
+    color: var(--content-secondary);
+}
+.paragraph-md{
+    font: var(--paragraph-md);
+    color: var(--content-secondary);
+}
+.paragraph-sm{
+    font: var(--paragraph-sm);
+    color: var(--content-secondary);
+}
+
+.label-lg{
+    font: var(--label-lg);
+    color: var(--content-primary);
+    text-transform: uppercase;
+}
+
+
+.label-md{
+    font: var(--label-md);
+    color: var(--content-primary);
+}
+
+.label-sm{
+    font: var(--label-sm);
+    color: var(--content-primary);
+}
+
+.btn-sort{
+    font: var(--label-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 16px;
+    background-color: var(--background-tertiary);
+    box-shadow: none;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    color: var(--content-primary);
+    margin-top: 40px;
+    text-transform: uppercase;
+    & img{
+        width: 24px;
+    }
+}
+
+
+.visible{
+    display: flex; 
+}
+
+.hidden{
+    display: none;
+}
+.cubo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px; 
+    height: 65px;
+    border-radius: 8px;
+    background-color: var(--content-brand);
+    position: relative;
+    animation: cubo 2s forwards;
+}
+
+.resultado {
+    font: var(--sorted-number);
+    color: var(--content-brand);
+    animation: resultado 1s forwards;
+    animation-delay: 1.5s;
+}
+
+
+@media (width<= 39rem){
+    
+.display-lg{
+    font: var(--display-md);
+    color: var(--content-primary);
+    text-transform: uppercase;
+}
+}

@@ -1,0 +1,191 @@
+.main-container{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+.secondary-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.logo{
+    width: 172px;
+    margin: 76px 0px 89px 95px;
+}
+.main-content{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+.content-container-text{
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-sec-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 482px;
+    margin-left: 108px;
+    margin-top: 32.5px;
+    margin-bottom: 32.5px;
+
+
+}
+.main-sec-text{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    & .label-lg{
+        color: var(--content-primary);
+    }
+    & .label-md{
+        color: var(--content-secondary);
+    }
+}
+
+.main-third-container{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center; 
+     justify-content: center;
+    margin-left: 108px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    
+    width: 482px;
+    height: 342px;
+    & .overline{  
+        background: unset;
+        -webkit-background-clip: unset;
+        background-clip: unset;
+        -webkit-text-fill-color: unset;
+        text-transform: uppercase;
+       color: var(--content-secondary);
+    }
+    button{
+        margin-bottom: 0px;
+    }
+    }
+
+.main-third-container-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.sorted-container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;    
+}
+
+@media( width <= 39rem){
+    .main-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .secondary-main-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 35px;
+        padding-right: 36px;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        
+    }
+    .content-container-text{
+        display: flex;
+        flex-direction: column;
+        margin-top: 79px;
+        margin-bottom: 44px;
+    }
+    
+    .main-sec-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: unset;
+        width: unset;
+    }
+    .main-sec-text{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        align-items: left;
+        justify-content: center;
+        text-align: left;
+        margin-top: 42px;
+        & .label-lg{
+            color: var(--content-primary);
+        }
+        & .label-md{
+            color: var(--content-secondary);
+        }
+    }
+    
+    .main-third-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: unset;
+        padding-bottom: 0px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        width: unset;
+        justify-content: center;
+        & .overline{  
+            background: unset;
+            -webkit-background-clip: unset;
+            background-clip: unset;
+            -webkit-text-fill-color: unset;
+            text-transform: uppercase;
+           color: var(--content-secondary);
+        }
+        button{
+            margin-bottom: 0px;
+        }
+        }
+    
+    
+    .sorted-container{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;    
+        flex-wrap: wrap;
+    }
+    .number-sorter-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

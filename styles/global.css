@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* CORES */
+
+    --content-primary:#ffffff;
+    --content-secondary: #c7c9cc;
+    --content-tertiary: #d9d9d9;
+
+    --content-brand: #c58de7; 
+    /* mesmo do background brand ^*/
+
+    --color-inverse: #030203;
+
+    /* BACKGROUND*/
+
+    --background-primary: #020202 ;
+    --background-secondary: #111012;
+    --background-tertiary: #24222e;
+    --background-brand: #c58de7;
+    --background-gray: #3d3d3d;
+
+    /*Accent*/
+
+    --accent-pink: #d586e0;
+    --accent-blue: #91a1fa;
+    --accent-green: #77c0af;
+    --accent-lime: #d1dc97;
+    --accent-red: #e9a9b3;
+
+    /* Gradiente */
+    --gradient-border: var(--accent-green) 0%, var(--accent-lime) 14.84%, var(--accent-red) 32.15%, var(--accent-pink) 65.79%, var(--accent-blue) 84.58% ;
+
+    --gradient-background: var(--accent-pink) 0%, var(--accent-blue) 98.93%;
+
+    --gradient-content: var(--content-secondary) 0%, var(--background-gray) 100% ;
+    
+        /*Tipografia*/
+        --ff-sora: "Sora";
+        --ff-roboto-mono: "Roboto mono";
+        --ff-roboto-flex: "Roboto flex";
+
+
+        --display-lg: 800 72px/130% var(--ff-sora);
+        --display-md: 800 40px/130% var(--ff-sora);
+        --display-sm: 700 32px/130% var(--ff-sora);        
+
+        --overline: 700 16px/150% var(--ff-roboto-mono); 
+
+        --sorted-number: 700 48px/150% var(--ff-roboto-mono);
+
+        --label-sm: 700 12px/150% var(--ff-roboto-flex);
+        --label-md: 700 16px/150% var(--ff-roboto-flex);
+        --label-lg: 700 20px/150% var(--ff-roboto-flex);
+        --paragraph-sm: 500 12px/150% var(--ff-roboto-flex);
+        --paragraph-md: 500 14px/150% var(--ff-roboto-flex);
+        --paragraph-lg: 500 16px/150% var(--ff-roboto-flex);
+}
+
+
+body{
+    background: linear-gradient(to bottom,  var(--background-primary), transparent 450%), url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--background-primary);
+    height: 100vh;
+}
+
+input {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset{
+    border: none;
+}
+.desktop-only{
+    display: initial;
+}
+
+.mobile-only{
+    display: none;
+}
+
+@media(width <= 39rem){
+    .desktop-only{
+        display: none;
+    }
+    .mobile-only{
+        display: initial;
+    }
+}

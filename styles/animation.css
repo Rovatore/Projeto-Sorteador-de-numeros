@@ -1,0 +1,104 @@
+@keyframes fadeGradient{
+    from {
+        background: var(--background-gray);
+    }
+    
+    50%{
+        background: var(--accent-pink);
+    }
+    
+    95%{
+        background: var(--accent-blue);
+        opacity: 0.7;
+    }
+    to{
+        opacity: 1;
+        background: linear-gradient(var(--gradient-background));
+    }
+}
+
+@keyframes fadeOut{
+    from{
+        background: linear-gradient(--gradient-background);
+    }
+
+    to{
+        background: var(--background-gray);
+    }
+}
+
+@keyframes apareça{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        display: initial;
+        opacity: 1;
+    }
+}
+
+@keyframes begone{
+    from{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+    85%{
+        opacity: 0.1;
+    }
+    95%{
+        opacity: 0;
+    }
+    to{
+    display: none;
+    }
+}@keyframes cubo {
+     0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    
+    100% {
+        transform:  rotate(360deg);
+        
+        background-color: unset;
+    }
+
+}
+
+@keyframes resultado {
+      0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.Suma{
+    animation: begone 0.5s ease-in-out;
+}
+
+.Apareça{
+    animation: apareça 0.5s ease-in-out;
+}
+
+.btn-anim{
+    animation: btn-anim 1s forwards;
+    opacity: 0;
+    animation-delay: 2s;
+}
+
+@keyframes btn-anim {
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity:1;
+    }
+}
