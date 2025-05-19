@@ -102,7 +102,6 @@
     font: var(--sorted-number);
     color: var(--content-brand);
     animation: resultado 1s forwards;
-    animation-delay: 1.5s;
 }
 
 

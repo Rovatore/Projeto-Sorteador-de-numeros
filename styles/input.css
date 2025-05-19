@@ -83,5 +83,5 @@ input[type="checkbox"]:checked + .switch-btn {
 }
 
 input[type="checkbox"]:checked + .switch-btn::before {
-    transform: translatex(10px);
+    transform: translateX(10px);
 }

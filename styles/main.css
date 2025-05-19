@@ -9,7 +9,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     flex-direction: row;
 }
 .logo{
@@ -21,6 +21,7 @@
     align-items: left;
     justify-content: center;
     flex-direction: column;
+    padding-left: 24px;
 }
 .content-container-text{
     margin-top: 38px;
@@ -36,8 +37,7 @@
     margin-left: 108px;
     margin-top: 32.5px;
     margin-bottom: 32.5px;
-
-
+    
 }
 .main-sec-text{
     display: flex;
@@ -57,12 +57,11 @@
     flex-direction: column;
     align-items: center; 
      justify-content: center;
-    margin-left: 108px;
     padding-bottom: 0px;
     text-transform: uppercase;
-    
-    width: 482px;
-    height: 342px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 108px;
     & .overline{  
         background: unset;
         -webkit-background-clip: unset;
@@ -90,6 +89,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 17px;    
 }
 
@@ -107,37 +107,27 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding-left: 35px;
-        padding-right: 36px;
     }
     .main-content{
         display: flex;
         flex-direction: column;
         align-items: left;
         justify-content: center;
+        padding: unset;
         
     }
     .content-container-text{
         display: flex;
         flex-direction: column;
-        margin-top: 79px;
-        margin-bottom: 44px;
     }
     
-    .main-sec-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: unset;
-        width: unset;
-    }
     .main-sec-text{
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
         align-items: left;
         justify-content: center;
+        padding-left: 50px;
         text-align: left;
         margin-top: 42px;
         & .label-lg{
@@ -148,12 +138,22 @@
         }
     }
     
+    .main-sec-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: unset;
+        width: unset;
+    }
+
     .main-third-container{
         display: flex;
+        position: unset;
         flex-direction: column;
         align-items: center;
         margin-left: unset;
-        padding-bottom: 0px;
+        overflow: visible;
         text-transform: uppercase;
         margin-bottom: 40px;
         margin-top: 40px;
